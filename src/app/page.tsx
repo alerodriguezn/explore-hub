@@ -13,13 +13,13 @@ export default function Home() {
           height={200}
         />
         <p className="text-center font-bold text-xl">¿Para qué vas a usar ExploreHub?</p>
-        
+
         <div className="flex gap-4 mt-6">
-          <Link href="/auth/client/login" className="bg-primary text-white p-2 rounded-lg hover:bg-amber-500 ">
+          <Link href="/auth/client/login" className="bg-primary text-white p-2 rounded-lg hover:bg-amber-500 w-40 text-center content-center ">
             Explorar Servicios
           </Link>
           {/* Transition all effect */}
-          <Link href="/auth/business/new-account" className="bg-primary text-white p-2 rounded-lg hover:bg-amber-500 ">
+          <Link href="/auth/business/new-account" className="bg-primary text-white p-2 rounded-lg hover:bg-amber-500 w-40 text-center content-center  ">
             Vender Servicios
           </Link>
       

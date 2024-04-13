@@ -25,7 +25,7 @@ export default function LoginPage() {
         <h2 className="text-3xl text-center font-bold">
           Bienvenido a <span className="color-primary">ExploreHub</span>
         </h2>
-        <p className="font-light">Disfruta la experiencia planeada para ti </p>
+        <p className="font-light text-center">Disfruta la experiencia planeada para ti </p>
         <Image
           width={200}
           height={200}
@@ -44,7 +44,7 @@ export default function LoginPage() {
                 display: "flex",
                 justifyContent: "left",
                 alignItems: "center",
-                gap: "40px",
+                gap: "30px",
               }}
             >
               <Image
