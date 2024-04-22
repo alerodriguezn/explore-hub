@@ -14,5 +14,7 @@ const theme = createTheme({
     fontFamily: roboto.style.fontFamily,
   },
 });
+// Define the colors as constants or variables
+
 
 export default theme;
