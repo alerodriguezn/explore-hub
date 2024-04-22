@@ -68,6 +68,28 @@ El componente modal utiliza varias funciones para manejar su comportamiento:
 #### Ejemplo de Uso
 
 ```jsx
+// MODAL
+    const [isModalOpen, setModalOpen] = useState(false);
+      // OPEN
+      const handleOpenModal = () => {
+        setModalOpen(true);
+      };
+      // CLOSE
+      const handleCloseModal = () => {
+        setModalOpen(false);
+      };
+      // ACEPTAR AÑADIR
+      const handleAcceptModal = () => {
+
+
+        // Cerrar el modal
+        setModalOpen(false);
+
+      };
+      // MANEJAR CAMBIO AÑADIR
+      const handleInputChange = (event, campo) => {
+        print(campo,": ", event.target.value,);
+      };
 <ModalComponent
   open={isModalOpen}
   handleClickClose={handleCloseModal}
