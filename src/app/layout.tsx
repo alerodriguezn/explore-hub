@@ -22,7 +22,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={nunito.className}>
         <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}>{children}</ThemeProvider>
+          <ThemeProvider theme={theme}>
+            {children}
+          </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
     </html>
