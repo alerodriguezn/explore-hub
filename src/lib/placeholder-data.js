@@ -28,27 +28,31 @@ export const getInterestingPlaces = () => {
   return [
     {
       id: "1",
-      name: "Puerto Viejo",
-      image: "/imgs/places/puertoviejo.jpg",
-      description: "Puerto Viejo y su aire hippie",
+      name: "Playa Puerto Viejo",
+      country: "Costa Rica",
+      city: "Puerto Viejo",
+      image: "/imgs/places/puertoviejo.jpg"
     },
     {
       id: "2",
-      name: "Tortuguero",
-      image: "/imgs/places/tortuguero.jpg",
-      description: "En el pueblo de Tortuguero entre Junio y Septiembre se pueden hacer voluntariados para cuidar el desove de las tortugas y ver cómo hacen la pequeña, (pero inmensa para los recién nacidos) travesía entre la playa y el mar.",
+      name: "Parque Nacional Tortuguero",
+      country: "Costa Rica",
+      city: "Tortuguero",
+      image: "/imgs/places/tortuguero.jpg"
     },
     {
       id: "3",
-      name: "Tortuguero",
-      image: "/imgs/places/tortuguero.jpg",
-      description: "En el pueblo de Tortuguero entre Junio y Septiembre se pueden hacer voluntariados para cuidar el desove de las tortugas y ver cómo hacen la pequeña, (pero inmensa para los recién nacidos) travesía entre la playa y el mar.",
+      name: "Volcán Arenal",
+      country: "Costa Rica",
+      city: "Alajuela",
+      image: "/imgs/places/volcanarenal.jpeg",
     },
     {
       id: "4",
-      name: "Tortuguero",
-      image: "/imgs/places/tortuguero.jpg",
-      description: "En el pueblo de Tortuguero entre Junio y Septiembre se pueden hacer voluntariados para cuidar el desove de las tortugas y ver cómo hacen la pequeña, (pero inmensa para los recién nacidos) travesía entre la playa y el mar.",
+      name: "Reserva Bosque Nuboso",
+      country: "Costa Rica",
+      city: "Monteverde",
+      image: "/imgs/places/monteverde.jpg",
     }
   ]
 };

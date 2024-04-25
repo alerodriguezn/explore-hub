@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+import React from 'react'
+import './carousel.css'
 
 import Image from 'next/image'
 
@@ -33,7 +34,7 @@ export default function EmblaCarousel() {
               />
               <div className="embla__slide__label">
                   <LocationOnIcon />
-                  <p>{place.name}</p>
+                  <p><b style={{color:"#ffdebf"}}>{`${place.name}`}</b>{`, ${place.city} - ${place.country}`}</p>
               </div>
             </div>
           </div>
