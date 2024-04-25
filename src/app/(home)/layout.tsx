@@ -1,4 +1,5 @@
-import { TopMenu } from "@/components/ui/TopMenu";
+import NavBar from "@/components/ui/NavBar";
+import { TopMenu2 } from "@/components/ui/TopMenu2";
 
 export default function HomeLayout({
   children,
@@ -7,7 +8,8 @@ export default function HomeLayout({
 }) {
   return (
     <main className="min-h-screen">
-      <TopMenu />
+      <TopMenu2 />
+      <NavBar />
       {children}
     </main>
   );
