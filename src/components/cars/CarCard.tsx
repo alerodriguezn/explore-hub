@@ -61,13 +61,13 @@ export default function CarCard({transport} : {transport : Transport}) {
               icon={<SettingsIcon sx={{color: 'white'}}/>}
               label={transport.transmission}
               size="small"
-              color="primary"
+              color="secondary"
             />
             <Chip
               icon={<LocalGasStationIcon sx={{color: 'white'}}/>}
               label={transport.fuelType}
               size="small"
-              color="primary"
+              color="secondary"
             />
           </Stack>
 
