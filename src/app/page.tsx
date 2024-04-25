@@ -5,14 +5,16 @@ import MUIButton from "@/components/simple/button";
 import { SnackbarProvider} from 'notistack'
 import { InputControl, ModalComponent } from "@/components/commons";
 import { useState } from "react";
+import EmblaCarousel from "@/components/carousel/EmblaCarousel";
 export default function Home() {
 
   return (
     <SnackbarProvider>
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="flex flex-col justify-center items-center">
+    <main className="flex min-h-screen flex-col items-center justify-between p-0">
+      <EmblaCarousel />
+      <div className="flex flex-col justify-center items-center p-24">
         <Image
-          className="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+          className="max-w-xs transition duration-300 ease-in-out "
           src={"/imgs/logo-eh.png"}
           alt="Logo de ExploreHub"
           width={200}
@@ -35,8 +37,3 @@ export default function Home() {
 
   );
 }
-
-
-/*
- 
-*/

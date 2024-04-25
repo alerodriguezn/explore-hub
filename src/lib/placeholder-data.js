@@ -24,3 +24,19 @@ export const getCars = () => {
   }
 ]};
 
+export const getInterestingPlaces = () => {
+  return [
+    {
+      id: "1",
+      name: "Puerto Viejo",
+      image: "/imgs/places/puertoviejo.jpg",
+      description: "Puerto Viejo y su aire hippie",
+    },
+    {
+      id: "2",
+      name: "Tortuguero",
+      image: "/imgs/places/tortuguero.jpg",
+      description: "En el pueblo de Tortuguero entre Junio y Septiembre se pueden hacer voluntariados para cuidar el desove de las tortugas y ver cómo hacen la pequeña, (pero inmensa para los recién nacidos) travesía entre la playa y el mar.",
+    }
+  ]
+};
