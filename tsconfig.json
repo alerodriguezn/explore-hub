@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/simple/button.jsx", "src/components/simple/autocomplete.jsx", "src/colors.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/simple/button.jsx", "src/components/simple/autocomplete.jsx", "src/colors.js", "src/components/carousel/EmblaCarouselDotButton.jsx", "src/components/carousel/EmblaCarouselArrowButtons.jsx", "src/components/carousel/EmblaCarousel.jsx", "src/components/carousel/EmblaCarousel.jsx"],
   "exclude": ["node_modules"]
 }
