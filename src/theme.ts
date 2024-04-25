@@ -9,10 +9,20 @@ const roboto = Roboto({
 });
 
 const theme = createTheme({
-  
   typography: {
     fontFamily: roboto.style.fontFamily,
   },
+  palette: {
+    primary: {
+      main: '#d97706',
+    },
+    secondary: {
+      main: '#ffdebf',
+    },
+    background: {
+      default: '#fff',
+    },
+  }
 });
 // Define the colors as constants or variables
 
