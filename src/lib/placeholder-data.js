@@ -37,6 +37,18 @@ export const getInterestingPlaces = () => {
       name: "Tortuguero",
       image: "/imgs/places/tortuguero.jpg",
       description: "En el pueblo de Tortuguero entre Junio y Septiembre se pueden hacer voluntariados para cuidar el desove de las tortugas y ver cómo hacen la pequeña, (pero inmensa para los recién nacidos) travesía entre la playa y el mar.",
+    },
+    {
+      id: "3",
+      name: "Tortuguero",
+      image: "/imgs/places/tortuguero.jpg",
+      description: "En el pueblo de Tortuguero entre Junio y Septiembre se pueden hacer voluntariados para cuidar el desove de las tortugas y ver cómo hacen la pequeña, (pero inmensa para los recién nacidos) travesía entre la playa y el mar.",
+    },
+    {
+      id: "4",
+      name: "Tortuguero",
+      image: "/imgs/places/tortuguero.jpg",
+      description: "En el pueblo de Tortuguero entre Junio y Septiembre se pueden hacer voluntariados para cuidar el desove de las tortugas y ver cómo hacen la pequeña, (pero inmensa para los recién nacidos) travesía entre la playa y el mar.",
     }
   ]
 };
