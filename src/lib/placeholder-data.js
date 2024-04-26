@@ -21,7 +21,40 @@ export const getCars = () => {
     fuelType: "Diesel",
     transmission: "Automatico",
     passengers: 5,
-  }
+  },
+  {
+    id: "2",
+    name: "Suzuki Swift",
+    image: "/imgs/carsexample/swift_4_doors_lrg.jpg",
+    price: 90,
+    description: ["Cobertura por daño y robo con franquicia","Seguro de responsabilidad civil","Conductor adicional"],
+    rating: 3,
+    fuelType: "Diesel",
+    transmission: "Automatico",
+    passengers: 5,
+  },
+  {
+    id: "2",
+    name: "Suzuki Swift",
+    image: "/imgs/carsexample/swift_4_doors_lrg.jpg",
+    price: 90,
+    description: ["Cobertura por daño y robo con franquicia","Seguro de responsabilidad civil","Conductor adicional"],
+    rating: 3,
+    fuelType: "Diesel",
+    transmission: "Automatico",
+    passengers: 5,
+  },
+  {
+    id: "2",
+    name: "Suzuki Swift",
+    image: "/imgs/carsexample/swift_4_doors_lrg.jpg",
+    price: 90,
+    description: ["Cobertura por daño y robo con franquicia","Seguro de responsabilidad civil","Conductor adicional"],
+    rating: 3,
+    fuelType: "Diesel",
+    transmission: "Automatico",
+    passengers: 5,
+  },
 ]};
 
 export const getInterestingPlaces = () => {

@@ -9,3 +9,8 @@ export type Transport = {
     transmission: string;
     passengers: number;
 };
+
+export type FilterCategory = {
+    name: string;
+    filters: string[];
+}

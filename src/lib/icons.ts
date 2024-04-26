@@ -6,5 +6,6 @@ import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 import ApartmentIcon from '@mui/icons-material/Apartment';
 import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import FilterAltIcon from '@mui/icons-material/FilterAlt';
 
-export {StarIcon, SettingsIcon, LocalGasStationIcon, PeopleIcon, BeachAccessIcon, ApartmentIcon, DirectionsCarIcon, LocationOnIcon}
+export {StarIcon, SettingsIcon, LocalGasStationIcon, PeopleIcon, BeachAccessIcon, ApartmentIcon, DirectionsCarIcon, LocationOnIcon, FilterAltIcon}
