@@ -10,7 +10,12 @@ export type Transport = {
     passengers: number;
 };
 
+export type FilterProp = {
+    [key: string]: string[];
+};
+
 export type FilterCategory = {
+    displayName: string;
     name: string;
     filters: string[];
 }
