@@ -9,3 +9,13 @@ export type Transport = {
     transmission: string;
     passengers: number;
 };
+
+export type FilterProp = {
+    [key: string]: string[];
+};
+
+export type FilterCategory = {
+    displayName: string;
+    name: string;
+    filters: string[];
+}

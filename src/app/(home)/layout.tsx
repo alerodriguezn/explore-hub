@@ -7,10 +7,15 @@ export default function HomeLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="min-h-screen">
-      <TopMenu2 />
-      <NavBar />
-      {children}
+    <main className="min-h-screen flex flex-col">
+      <div className="w-full fixed top-0">
+        <TopMenu2 />
+        <NavBar />
+      </div>
+      <div className="pt-20">
+        <div style={{height:"146px"}} />
+        {children}
+      </div>
     </main>
   );
 }
