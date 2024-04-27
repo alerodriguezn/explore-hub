@@ -11,9 +11,9 @@ import { useTheme } from '@mui/material/styles';
 import { BeachAccessIcon, DirectionsCarIcon, ApartmentIcon } from '@/lib/icons';
 
 const pages = [
-    { name: 'Alojamientos', icon: <ApartmentIcon sx={{fontSize:'30px'}} />, link: '/accommodations' },
-    { name: 'Transporte', icon: <DirectionsCarIcon sx={{fontSize:'30px'}} />, link: '/transport' },
-    { name: 'Actividades', icon: <BeachAccessIcon sx={{fontSize:'30px'}} />, link: '/activities' },
+    { name: 'Alojamientos', icon: <ApartmentIcon sx={{fontSize:'30px'}} />, link: '/home/accommodations' },
+    { name: 'Transporte', icon: <DirectionsCarIcon sx={{fontSize:'30px'}} />, link: '/home/transport' },
+    { name: 'Actividades', icon: <BeachAccessIcon sx={{fontSize:'30px'}} />, link: '/home/activities' },
 ];
   
 function NavBar() {

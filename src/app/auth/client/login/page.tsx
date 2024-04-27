@@ -1,7 +1,9 @@
+"use client"
 import { Button, Stack } from "@mui/material";
 import Image from "next/image";
 import { nunito } from "@/config/fonts";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const loginOptions = [
   {
@@ -19,6 +21,9 @@ const loginOptions = [
 ];
 
 export default function LoginPage() {
+
+  const router = useRouter()
+
   return (
     <div className="flex flex-col justify-center items-center min-h-screen">
       <div className="flex flex-col justify-center items-center bg-white rounded-xl p-10">
@@ -35,6 +40,10 @@ export default function LoginPage() {
         <Stack spacing={2}>
           {loginOptions.map((option) => (
             <Button
+              onClick={() => {
+                router.push("/home/");
+  
+              }}
               key={option.text}
               sx={{
                 borderRadius: "18px",
@@ -61,7 +70,7 @@ export default function LoginPage() {
           ))}
         </Stack>
 
-        <Link className="mt-8 underline font-bold" href="/">
+        <Link className="mt-8 underline font-bold" href="/auth/client/new-account">
           Crear Nueva Cuenta
         </Link>
       </div>

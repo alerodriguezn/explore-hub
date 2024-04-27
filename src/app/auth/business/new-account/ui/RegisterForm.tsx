@@ -2,7 +2,6 @@
 
 // Se puede usar MUI con Formik
 // Revisar esto después: https://formik.org/docs/examples/with-material-ui
-
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import InputLabel from "@mui/material/InputLabel";
@@ -10,17 +9,19 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { Button } from "@mui/material";
+import { useRouter } from "next/navigation";
 
 export default function RegisterForm() {
+
+  const router = useRouter()
   return (
-    <div>
+    <div className="mb-4">
       <Box
         component="form"
         sx={{
           "& .MuiTextField-root": { m: 1, width: "25ch" },
           display: "grid",
           gridTemplateColumns: "repeat(2, 1fr)",
-          marginTop: "4px",
           height: "100%",
           gap: "24px",
         }}
@@ -176,6 +177,7 @@ export default function RegisterForm() {
         </div>
       </Box>
       <Button
+        onClick={() => router.push("/home/")}
         sx={{
           borderRadius: "18px",
           backgroundColor: "#D97227",
