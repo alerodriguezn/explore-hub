@@ -15,7 +15,7 @@ export default function Filter({ categories, onFilterChange }: FilterProps) {
     };
 
     return (
-        <Card sx={{ display: "flex", borderRadius: "15px", padding: "30px", width:"20%"}}>
+        <Card sx={{ display: "flex", borderRadius: "15px", padding: "30px", width:"100%"}}>
         <Box sx={{ display: "flex", flexDirection: "column", width: "80%", gap:"1rem" }}>
             <Box sx={{ display: "flex", flexDirection: "row", borderBottom:"1px solid lightgray", width: "100%", padding:"10px"}}>
             <FilterAltIcon sx={{fontSize:"30px"}}/>

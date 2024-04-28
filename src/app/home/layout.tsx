@@ -8,11 +8,11 @@ export default function HomeLayout({
 }) {
   return (
     <main className="min-h-screen flex flex-col">
-      <div className="w-full fixed top-0">
+      <div className="w-full fixed top-0 z-50 bg-gray-200">
         <TopMenu2 />
         <NavBar />
       </div>
-      <div className="pt-20">
+      <div className="pt-20 pb-20">
         <div style={{height:"146px"}} />
         {children}
       </div>

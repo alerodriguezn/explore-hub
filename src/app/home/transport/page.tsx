@@ -20,26 +20,24 @@ export default function AccommodationPage() {
   }
 
   const categories : FilterCategory[] = [
-    {displayName: "Tipo de combustible", name: "fuelType", filters:["Gasolina", "Diesel", "Electrico"]},
+    {displayName: "Tipo", name: "type", filters:["Privado", "Compartido"]},
+    {displayName: "Tipo de combustible", name: "fuelType", filters:["Gasolina", "Hibrido", "Electrico"]},
     {displayName: "Transmisión", name: "transmission", filters:["Manual", "Automatico"]},
-    {displayName: "Pasajeros", name: "passengers", filters:["2", "4", "5", "7"]},
+    {displayName: "Pasajeros", name: "passengers", filters:["4", "5", "7"]}
   ]
   
   return (
-    <div className='w-full h-full flex justify-center items-center position-relative'>
-      <div style={{
-        position: "absolute",
-        left: "5%",
-        top: "30%",
-        width: "100%"
-      }}>
+    <div style={{ display: 'flex', justifyContent: 'center', gap: '5rem' }}>
+      <div style={{ width: '20%' }}>
         <Filter onFilterChange={handleFilterChange} categories={categories}/>
       </div>
-      <Stack direction="column" spacing={2} sx={{ marginTop: "5px" }}>
-        {cars.map((item, index) => (
-          <CarCard transport={item} key={index}/>
-        ))}
-      </Stack>
+      <div>
+        <Stack direction="column" spacing={2}>
+          {cars.map((item, index) => (
+            <CarCard transport={item} key={index}/>
+          ))}
+        </Stack>
+      </div>
     </div>
   );
 }
