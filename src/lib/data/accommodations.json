@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "Barcelo San Jose",
+        "type": "Hotel",
+        "city": "San Jose",
+        "location": "A 5 millas del centro",
+        "stars": 5,
+        "price": 50,
+        "image": "/imgs/hotels/barcelo.avif"
+    },
+    {
+        "id": 2,
+        "name": "Casa Roland",
+        "type": "Hotel",
+        "city": "San Jose",
+        "location": "A 2.3 millas del centro",
+        "stars": 3,
+        "price": 61,
+        "image": "/imgs/hotels/roland.avif"
+    },
+    {
+        "id": 3,
+        "name": "Hilton Garden Inn",
+        "type": "Hotel",
+        "city": "San Jose",
+        "location": "A 0.6 millas del centro",
+        "stars": 5,
+        "price": 100,
+        "image": "/imgs/hotels/garden-inn.avif"
+    },
+    {
+        "id": 4,
+        "name": "Aranjuez Santa Ana - Loft # 3",
+        "type": "Casa / Apartamento",
+        "city": "San Jose",
+        "location": "A 6.1 millas del centro",
+        "stars": 0,
+        "price": 71,
+        "image": "/imgs/hotels/aranjuez.avif"
+    },
+    {
+        "id": 5,
+        "name": "Delcafetal",
+        "type": "Casa / Apartamento",
+        "city": "San Jose",
+        "location": "A 0.4 millas del centro",
+        "stars": 0,
+        "price": 18,
+        "image": "/imgs/hotels/delcafetal.avif"
+    }
+]

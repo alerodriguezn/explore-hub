@@ -1,46 +1,39 @@
+export const getAccommodations = () => {
+  const accommodations = require('./data/accommodations.json');
+  return accommodations;
+};
+
 export const getCars = () => {
   const cars = require('./data/cars.json');
-  return cars.cars
-}
+  return cars
+};
 
-export const filterCars = (filters) => {
-  return getCars().filter(car => {
-    return Object.keys(filters).every(filterKey => {
-        return String(filters[filterKey]).includes(String(car[filterKey]));
-    });
-  }); 
-}
-
+export const getActivities = () => {
+  const activities = require('./data/activities.json');
+  return activities;
+};
 
 export const getInterestingPlaces = () => {
-  return [
-    {
-      id: "1",
-      name: "Playa Puerto Viejo",
-      country: "Costa Rica",
-      city: "Puerto Viejo",
-      image: "/imgs/places/puertoviejo.jpg"
-    },
-    {
-      id: "2",
-      name: "Parque Nacional Tortuguero",
-      country: "Costa Rica",
-      city: "Tortuguero",
-      image: "/imgs/places/tortuguero.jpg"
-    },
-    {
-      id: "3",
-      name: "Volcán Arenal",
-      country: "Costa Rica",
-      city: "Alajuela",
-      image: "/imgs/places/volcanarenal.jpeg",
-    },
-    {
-      id: "4",
-      name: "Reserva Bosque Nuboso",
-      country: "Costa Rica",
-      city: "Monteverde",
-      image: "/imgs/places/monteverde.jpg",
-    }
-  ]
+  const places = require('./data/places.json');
+  return places;
+};
+
+export const filterAccommodations = (filters) => {
+  return filterItems(getAccommodations(), filters);
+};
+
+export const filterCars = (filters) => {
+  return filterItems(getCars(), filters);
+};
+
+export const filterActivities = (filters) => {
+  return filterItems(getActivities(), filters);
+};
+
+const filterItems = (items, filters) => {
+  return items.filter(item => {
+    return Object.keys(filters).every(filterKey => {
+        return String(filters[filterKey]).includes(String(item[filterKey]));
+    });
+  });
 };

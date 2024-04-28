@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "Isla tortuga",
+        "type": "Actividad acuatica",
+        "image": "/imgs/activities/tortuga.webp",
+        "description": "San José: Tour de día completo a la Isla Tortuga con almuerzo, transporte y actividades acuáticas",
+        "duration": "1 dia",
+        "price": 100,
+        "stars": 4,
+        "labels": ["Tortuga", "Acuatica"]
+    },
+    {
+        "id": 2,
+        "name": "Mercado central",
+        "type": "Tour guiado",
+        "image": "/imgs/activities/mercado.webp",
+        "description": "San José: tour a pie por el Mercado Central y lugares de interés",
+        "duration": "3 horas",
+        "price": 20,
+        "stars": 5,
+        "labels": ["Cultura", "Mercado", "Calles"]
+    },
+    {
+        "id": 3,
+        "name": "Volcan Poas y Finca de cafe",
+        "type": "Excursion",
+        "image": "/imgs/activities/poas.webp",
+        "description": "Desde San José: Excursión al Volcán Poás y Visita a una Finca de Café",
+        "duration": "8 horas",
+        "price": 90,
+        "stars": 4,
+        "labels": ["Volcan", "Cafe"]
+    },
+    {
+        "id": 4,
+        "name": "Volcan Arenal",
+        "type": "Excursion",
+        "image": "/imgs/activities/arenal.jpg",
+        "description": "San José: volcán Arenal, aguas termales, tirolina y comidas",
+        "duration": "14 horas",
+        "price": 180,
+        "stars": 5,
+        "labels": ["Volcan", "Termales", "Deportes"]
+    },
+    {
+        "id": 5,
+        "name": "Tour a pie",
+        "type": "Tour guiado",
+        "image": "/imgs/activities/perezoso.webp",
+        "description": "San José: tour a pie con perezosos, pájaros y árboles",
+        "duration": "2.5 horas",
+        "price": 45,
+        "stars": 5,
+        "labels": ["Caminata", "Fauna", "Flora"]
+    },
+    {
+        "id": 6,
+        "name": "Volcan Irazu y Cartago",
+        "type": "Excursion",
+        "image": "/imgs/activities/irazu.webp",
+        "description": "San José: volcán Irazú, ciudad de Cartago y valle de Orosi",
+        "duration": "8 horas",
+        "price": 140,
+        "stars": 4,
+        "labels": ["Volcan", "Ciudad"]
+    }
+]
