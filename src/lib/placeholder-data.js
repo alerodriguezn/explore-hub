@@ -1,7 +1,6 @@
-import cars  from "./exampleData/cars.json";
-
 export const getCars = () => {
-    return cars.cars
+  const cars = require('./data/cars.json');
+  return cars.cars
 }
 
 export const filterCars = (filters) => {
