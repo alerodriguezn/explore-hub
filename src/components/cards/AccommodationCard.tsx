@@ -14,7 +14,7 @@ export default function AccommodationCard() {
       <CardMedia
         component="img"
         sx={{ width: 151 }}
-        image="/imgs/hotelexample.jpg"
+        image="/imgs/hotels/barcelo.avif"
         alt="Example"
       />
       <Box sx={{ display: "flex", flexDirection: "column" }}>

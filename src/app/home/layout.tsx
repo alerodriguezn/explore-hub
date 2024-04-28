@@ -1,5 +1,5 @@
 import NavBar from "@/components/ui/NavBar";
-import { TopMenu2 } from "@/components/ui/TopMenu2";
+import { TopMenu } from "@/components/ui/TopMenu";
 
 export default function HomeLayout({
   children,
@@ -9,7 +9,7 @@ export default function HomeLayout({
   return (
     <main className="min-h-screen flex flex-col">
       <div className="w-full fixed top-0 z-50 bg-gray-200">
-        <TopMenu2 />
+        <TopMenu />
         <NavBar />
       </div>
       <div className="pt-20 pb-20">
