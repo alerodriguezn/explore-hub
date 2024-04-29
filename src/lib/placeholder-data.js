@@ -33,7 +33,11 @@ export const filterActivities = (filters) => {
 const filterItems = (items, filters) => {
   return items.filter(item => {
     return Object.keys(filters).every(filterKey => {
+      if (Array.isArray(filters[filterKey]) && filterKey != 'passengers') {
+        return filters[filterKey].some(filterElement => item[filterKey].includes(filterElement));
+      } else {
         return String(filters[filterKey]).includes(String(item[filterKey]));
+      }
     });
   });
 };

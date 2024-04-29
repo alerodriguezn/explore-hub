@@ -5,6 +5,7 @@
         "type": "Hotel",
         "city": "San Jose",
         "location": "A 5 millas del centro",
+        "description": "Hotel de lujo con todas las comodidades en el corazón de San José.",
         "stars": 5,
         "price": 50,
         "image": "/imgs/hotels/barcelo.avif"
@@ -15,6 +16,7 @@
         "type": "Hotel",
         "city": "San Jose",
         "location": "A 2.3 millas del centro",
+        "description":"Hotel económico y cómodo, ideal para viajes de negocios.",
         "stars": 3,
         "price": 61,
         "image": "/imgs/hotels/roland.avif"
@@ -25,6 +27,7 @@
         "type": "Hotel",
         "city": "San Jose",
         "location": "A 0.6 millas del centro",
+        "description":"Hotel de alta gama con excelentes servicios y ubicación privilegiada.",
         "stars": 5,
         "price": 100,
         "image": "/imgs/hotels/garden-inn.avif"
@@ -35,7 +38,8 @@
         "type": "Casa / Apartamento",
         "city": "San Jose",
         "location": "A 6.1 millas del centro",
-        "stars": 0,
+        "description":"Loft moderno y acogedor en una zona tranquila de Santa Ana.",
+        "stars": 4,
         "price": 71,
         "image": "/imgs/hotels/aranjuez.avif"
     },
@@ -45,7 +49,8 @@
         "type": "Casa / Apartamento",
         "city": "San Jose",
         "location": "A 0.4 millas del centro",
-        "stars": 0,
+        "description": "Una hermosa casa en medio de un cafetal, perfecta para una escapada tranquila.",
+        "stars": 4.8,
         "price": 18,
         "image": "/imgs/hotels/delcafetal.avif"
     }
