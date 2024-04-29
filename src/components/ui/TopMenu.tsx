@@ -2,50 +2,49 @@
 
 import * as React from "react";
 import Image from "next/image";
-import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import Button from "@mui/material/Button";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import { useTheme } from '@mui/material/styles';
+import { Stack } from "@mui/system";
+import Link from "next/link";
 
-const pages = ["Products", "Pricing", "Blog"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
 export const TopMenu = () => {
+  const theme = useTheme();
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" color="transparent">
-        <Toolbar>
-          <Image src="/imgs/logo-eh.png" alt="Logo" width={100} height={100} />
-
+      <Stack direction="row" spacing={2} sx={{ marginTop: "5px" }}>
+          <Image src="/imgs/logo-nw.png" alt="Logo" width={125} height={125} />
           <Typography
-            variant="h6"
+            variant="h4"
             component="div"
-            sx={{ flexGrow: 1, color: "#D97227", fontWeight: "bold" }}
+            sx={{ flexGrow: 1, color: "#D97227", fontWeight: "bold", display: "flex", alignItems: "center"}}
           >
             ExploreHub
           </Typography>
 
-          <Box sx={{ display: "flex", gap: "20px" }}>
+          <Box sx={{ 
+            display: "flex", 
+            gap: "20px", 
+            height: "80px", 
+            backgroundColor: theme.palette.secondary.main, 
+            borderRadius: "0 0 0 60px",
+            padding: "30px",
+            }}>
             <IconButton>
-              <ShoppingCartIcon sx={{ color: "#D97227", fontSize: "35px" }} />
+              <Link href="/home/checkout">
+                <ShoppingCartIcon sx={{ color: "#D97227", fontSize: "40px" }} />
+              </Link>
             </IconButton>
 
-            <IconButton >
-              <AccountCircleIcon sx={{ color: "#D97227", fontSize: "35px" }} />
-              <Typography
-
-                component="p"
-                sx={{ flexGrow: 1, color: "#D97227", fontWeight: "bold", marginLeft: "10px"}}
-              >
+            <IconButton>
+              <AccountCircleIcon color="primary" sx={{ fontSize: "40px" }} />
+              <Typography color="primary" component="p" sx={{ flexGrow: 1, fontWeight: "bold", marginLeft: "10px", fontSize:"20px"}}>
                 My Account
               </Typography>
             </IconButton>
           </Box>
-        </Toolbar>
-      </AppBar>
-    </Box>
+      </Stack>
   );
 };

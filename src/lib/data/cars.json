@@ -1,85 +1,83 @@
-{
-  "cars": [
-    {
-      "id": "1",
-      "name": "Renault Logan",
-      "type": "Privado",
-      "image": "/imgs/carsexample/logan_lrg.jpg",
-      "price": 100,
-      "description": [
-        "Cobertura por daño y robo con franquicia",
-        "Seguro de responsabilidad civil",
-        "Conductor adicional",
-        "Cancelación hasta 24 horas antes del retiro"
-      ],
-      "rating": 4,
-      "fuelType": "Gasolina",
-      "transmission": "Automatico",
-      "passengers": 4
-    },
-    {
-      "id": "2",
-      "name": "Suzuki Swift",
-      "type": "Privado",
-      "image": "/imgs/carsexample/swift_4_doors_lrg.jpg",
-      "price": 120,
-      "description": [
-        "Cobertura por daño y robo con franquicia",
-        "Seguro de responsabilidad civil",
-        "Conductor adicional"
-      ],
-      "rating": 3,
-      "fuelType": "Gasolina",
-      "transmission": "Automatico",
-      "passengers": 5
-    },
-    {
-      "id": "3",
-      "name": "Renault Duster",
-      "type": "Privado",
-      "image": "/imgs/carsexample/duster_lrg.jpg",
-      "price": 195,
-      "description": [
-        "Cobertura por daño y robo con franquicia",
-        "Seguro de responsabilidad civil",
-        "Conductor adicional"
-      ],
-      "rating": 4,
-      "fuelType": "Gasolina",
-      "transmission": "Manual",
-      "passengers": 5
-    },
-    {
-      "id": "4",
-      "name": "Hyundai Accent",
-      "type": "Privado",
-      "image": "/imgs/carsexample/accent_lrg.jpg",
-      "price": 140,
-      "description": [
-        "Cobertura por daño y robo con franquicia",
-        "Seguro de responsabilidad civil",
-        "Conductor adicional"
-      ],
-      "rating": 4,
-      "fuelType": "Electrico",
-      "transmission": "Automatico",
-      "passengers": 5
-    },
-    {
-      "id": "5",
-      "name": "Volvo XC40",
-      "type": "Privado",
-      "image": "/imgs/carsexample/xc40_lrg.jpg",
-      "price": 425,
-      "description": [
-        "Cobertura por daño y robo con franquicia",
-        "Seguro de responsabilidad civil",
-        "Conductor adicional"
-      ],
-      "rating": 5,
-      "fuelType": "Hibrido",
-      "transmission": "Automatico",
-      "passengers": 5
-    }
-  ]
-}
+[
+  {
+    "id": "1",
+    "name": "Renault Logan",
+    "type": "Privado",
+    "image": "/imgs/cars/logan_lrg.jpg",
+    "price": 100,
+    "description": [
+      "Cobertura por daño y robo con franquicia",
+      "Seguro de responsabilidad civil",
+      "Conductor adicional",
+      "Cancelación hasta 24 horas antes del retiro"
+    ],
+    "rating": 4,
+    "fuelType": "Gasolina",
+    "transmission": "Automatico",
+    "passengers": 4
+  },
+  {
+    "id": "2",
+    "name": "Suzuki Swift",
+    "type": "Privado",
+    "image": "/imgs/cars/swift_4_doors_lrg.jpg",
+    "price": 120,
+    "description": [
+      "Cobertura por daño y robo con franquicia",
+      "Seguro de responsabilidad civil",
+      "Conductor adicional"
+    ],
+    "rating": 3,
+    "fuelType": "Gasolina",
+    "transmission": "Automatico",
+    "passengers": 5
+  },
+  {
+    "id": "3",
+    "name": "Renault Duster",
+    "type": "Privado",
+    "image": "/imgs/cars/duster_lrg.jpg",
+    "price": 195,
+    "description": [
+      "Cobertura por daño y robo con franquicia",
+      "Seguro de responsabilidad civil",
+      "Conductor adicional"
+    ],
+    "rating": 4,
+    "fuelType": "Gasolina",
+    "transmission": "Manual",
+    "passengers": 5
+  },
+  {
+    "id": "4",
+    "name": "Hyundai Accent",
+    "type": "Privado",
+    "image": "/imgs/cars/accent_lrg.jpg",
+    "price": 140,
+    "description": [
+      "Cobertura por daño y robo con franquicia",
+      "Seguro de responsabilidad civil",
+      "Conductor adicional"
+    ],
+    "rating": 4,
+    "fuelType": "Electrico",
+    "transmission": "Automatico",
+    "passengers": 5
+  },
+  {
+    "id": "5",
+    "name": "Volvo XC40",
+    "type": "Privado",
+    "image": "/imgs/cars/xc40_lrg.jpg",
+    "price": 425,
+    "description": [
+      "Cobertura por daño y robo con franquicia",
+      "Seguro de responsabilidad civil",
+      "Conductor adicional"
+    ],
+    "rating": 5,
+    "fuelType": "Hibrido",
+    "transmission": "Automatico",
+    "passengers": 5
+  }
+]
