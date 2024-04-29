@@ -8,7 +8,7 @@
         "duration": "1 dia",
         "price": 100,
         "stars": 4,
-        "labels": ["Tortuga", "Acuatica"]
+        "labels": ["Fauna", "Acuatica"]
     },
     {
         "id": 2,
@@ -19,11 +19,11 @@
         "duration": "3 horas",
         "price": 20,
         "stars": 5,
-        "labels": ["Cultura", "Mercado", "Calles"]
+        "labels": ["Cultura", "Mercado", "Ciudad"]
     },
     {
         "id": 3,
-        "name": "Volcan Poas y Finca de cafe",
+        "name": "Volcan Poas",
         "type": "Excursion",
         "image": "/imgs/activities/poas.webp",
         "description": "Desde San José: Excursión al Volcán Poás y Visita a una Finca de Café",
@@ -38,10 +38,10 @@
         "type": "Excursion",
         "image": "/imgs/activities/arenal.jpg",
         "description": "San José: volcán Arenal, aguas termales, tirolina y comidas",
-        "duration": "14 horas",
+        "duration": "1 dia",
         "price": 180,
         "stars": 5,
-        "labels": ["Volcan", "Termales", "Deportes"]
+        "labels": ["Volcan", "Termales", "Aventura"]
     },
     {
         "id": 5,
@@ -49,10 +49,10 @@
         "type": "Tour guiado",
         "image": "/imgs/activities/perezoso.webp",
         "description": "San José: tour a pie con perezosos, pájaros y árboles",
-        "duration": "2.5 horas",
+        "duration": "3 horas",
         "price": 45,
         "stars": 5,
-        "labels": ["Caminata", "Fauna", "Flora"]
+        "labels": ["Aventura", "Fauna", "Flora"]
     },
     {
         "id": 6,

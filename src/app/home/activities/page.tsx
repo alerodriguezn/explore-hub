@@ -2,28 +2,28 @@
 
 import CarCard from "@/components/cards/CarCard";
 import { useState } from "react";
-import { FilterCategory, Transport, FilterProp } from "@/lib/definitions";
+import { FilterCategory, Transport, FilterProp, Activity } from "@/lib/definitions";
 import { Stack } from "@mui/material";
-import { filterCars } from "@/lib/placeholder-data";
+import { filterActivities, filterCars } from "@/lib/placeholder-data";
 import Filter from "@/components/ui/Filter";
 import { handleFilters } from "@/lib/util/filters";
+import ActivityCard from "@/components/cards/ActivityCard";
 
 export default function AccommodationPage() {  
   const [selectedFilters, setSelectedFilters] = useState({});
   
-  const cars : Transport[] = filterCars(selectedFilters);
+  const activities : Activity[] = filterActivities(selectedFilters);
   
   const handleFilterChange = (category : string, filter : string, checked : boolean) => {
-    setSelectedFilters((prev : FilterProp) => {
+      setSelectedFilters((prev : FilterProp) => {
       return handleFilters(prev, category, filter, checked);
     });
   }
 
   const categories : FilterCategory[] = [
-    {displayName: "Tipo", name: "type", filters:["Privado", "Compartido"]},
-    {displayName: "Tipo de combustible", name: "fuelType", filters:["Gasolina", "Hibrido", "Electrico"]},
-    {displayName: "Transmisión", name: "transmission", filters:["Manual", "Automatico"]},
-    {displayName: "Pasajeros", name: "passengers", filters:["4", "5", "7"]}
+    {displayName: "Tipo", name: "type", filters:["Actividad acuatica", "Tour guiado", "Excursion"]},
+    {displayName: "Duración", name: "duration", filters:["1 dia", "3 horas", "8 horas"]},
+    {displayName: "Etiquetas", name: "labels", filters:["Fauna", "Flora", "Aventura", "Cultura", "Volcan"]}
   ]
   
   return (
@@ -33,8 +33,8 @@ export default function AccommodationPage() {
       </div>
       <div>
         <Stack direction="column" spacing={2}>
-          {cars.map((item, index) => (
-            <CarCard transport={item} key={index}/>
+          {activities.map((item, index) => (
+            <ActivityCard activity={item} key={index}/>
           ))}
         </Stack>
       </div>
