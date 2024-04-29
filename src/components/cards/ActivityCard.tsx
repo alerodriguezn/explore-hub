@@ -55,6 +55,7 @@ export default function ActivityCard({activity} : {activity : Activity}) {
           <Stack direction="row" spacing={.5} sx={{ marginBottom: "15px" }}>
             {activity.labels.map((item, index) => (
                 <Chip
+                key={index}
                 label={item}
                 size="small"
                 color="secondary"
