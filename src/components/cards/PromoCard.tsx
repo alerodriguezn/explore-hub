@@ -18,7 +18,7 @@ interface Props {
 
 export default function PromoCard({ promo }: Props) {
   return (
-    <Card sx={{ maxWidth: 300 }}>
+    <Card sx={{ maxWidth: "90%" }}>
       <CardActionArea>
         <Image
           src={promo.image}

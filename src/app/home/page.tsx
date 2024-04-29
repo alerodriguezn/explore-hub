@@ -54,7 +54,8 @@ export default function HomePage() {
           </div>
           <div className="mt-4">
             <h2 className="font-semibold mb-4">Principales Destinos </h2>
-            <div className="grid grid-cols-2 gap-2">
+            {/* Align in the middle */}
+            <div className="grid grid-cols-2 gap-y-4 w-full">
               {promo.map((item, index) => (
                 <PromoCard promo={item} key={index} />
               ))}
