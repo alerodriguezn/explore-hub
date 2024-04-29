@@ -13,6 +13,16 @@ export const getActivities = () => {
   return activities;
 };
 
+export const getRecommendedActivities = () => {
+  const activities = require('./data/recommended.json');
+  return activities;
+}
+
+export const getPromo = () => {
+  const promo = require('./data/promo.json');
+  return promo;
+}
+
 export const getInterestingPlaces = () => {
   const places = require('./data/places.json');
   return places;

@@ -1,0 +1,22 @@
+[
+    {
+        "id" : 1,
+        "name" : "Cartagena",
+        "img": "/imgs/others/cartagena.jpg"
+    },
+    {
+        "id" : 2,
+        "name" : "Monserrate",
+        "img": "/imgs/others/monserrate.jpg"
+    },
+    {
+        "id" : 1,
+        "name" : "Mañana Sera Bonito",
+        "img": "/imgs/others/msbtour.jpg"
+    },
+    {
+        "id" : 1,
+        "name" : "Zipaquira",
+        "img": "/imgs/others/zipaquira.jpg"
+    }
+]

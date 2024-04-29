@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Barcelo San Jose",
+        "type": "Hotel",
+        "description": "Hotel de lujo con todas las comodidades en el corazón de San José.",
+        "image": "/imgs/hotels/barcelo.avif"
+    },
+    {
+        "id": 2,
+        "name": "Volcan Irazu y Cartago",
+        "type": "Excursion",
+        "image": "/imgs/activities/irazu.webp",
+        "description": "San José: volcán Irazú, ciudad de Cartago y valle de Orosi"
+    },
+    {
+        "id": 3,
+        "name": "Hilton Garden Inn",
+        "type": "Hotel",
+        "description":"Hotel de alta gama con excelentes servicios y ubicación privilegiada.",
+        "image": "/imgs/hotels/garden-inn.avif"
+    },
+    {
+        "id": 4,
+        "name": "Volcan Arenal",
+        "type": "Excursion",
+        "description": "San José: volcán Arenal, aguas termales, tirolina y comidas",
+        "image": "/imgs/activities/arenal.jpg"
+    }
+]
