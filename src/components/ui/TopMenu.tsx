@@ -39,10 +39,12 @@ export const TopMenu = () => {
             </IconButton>
 
             <IconButton>
+            <Link href={'/home/profile'} key={'/home/profile' }>
               <AccountCircleIcon color="primary" sx={{ fontSize: "40px" }} />
               <Typography color="primary" component="p" sx={{ flexGrow: 1, fontWeight: "bold", marginLeft: "10px", fontSize:"20px"}}>
                 My Account
               </Typography>
+              </Link>
             </IconButton>
           </Box>
       </Stack>
