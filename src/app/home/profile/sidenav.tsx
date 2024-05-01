@@ -70,11 +70,11 @@ const StyledButton = styled('button')({
     }
 });
 
-const SideNav = ({ profile, setProfile }) => {
+const SideNav = ({ profile, setProfile }: { profile: any, setProfile: React.Dispatch<React.SetStateAction<any>> }) => {
     const [isModalOpen, setModalOpen] = useState(false);
-    const [modalContent, setModalContent] = useState('');
+    const [modalContent, setModalContent] = useState(0);
 
-    const handleOpenModal = (content: React.SetStateAction<string>) => {
+    const handleOpenModal = (content: React.SetStateAction<number>) => {
         setModalContent(content);
         setModalOpen(true);
     };
@@ -89,11 +89,11 @@ const SideNav = ({ profile, setProfile }) => {
 
     return (
         <div style={{ width: '100%', backgroundColor: '#ffffff', padding: '10px' }}>
-            {navItems.map(item => (
-                <StyledButton key={item.key} onClick={() => handleOpenModal(item.content)}>
-                    <FontAwesomeIcon icon={item.icon} style={{ marginRight: '10px' }} />
-                    {item.label}
-                </StyledButton>
+            {navItems.map((item, index) => (
+              <StyledButton key={item.key} onClick={() => handleOpenModal(index)}>
+                <FontAwesomeIcon icon={item.icon} style={{ marginRight: '10px' }} />
+                {item.label}
+              </StyledButton>
             ))}
             <ModalComponent
                 open={isModalOpen}
@@ -102,19 +102,19 @@ const SideNav = ({ profile, setProfile }) => {
                 title="Details"
                 content={
                     <div>
-                        {typeof modalContent === 'string' ? (
-                            <p>{modalContent}</p>
+                        {Array.isArray(navItems[modalContent].content) ? (
+                          contentArr(navItems[modalContent].content).map((field: { key: any; label: any; name: string | number; }) => (
+                            <InputControl
+                              key={field.key}
+                              label={field.label}
+                              value={profile[field.name]}
+                              placeholder={profile[field.name]}
+                              defaultValue={profile[field.name]}
+                              onChange={(e: { target: { value: any; }; }) => updateProfileField(field.name, e.target.value)}
+                            />
+                          ))
                         ) : (
-                            modalContent.map((field: { key: any; label: any; name: string | number; }) => (
-                                <InputControl
-                                    key={field.key}
-                                    label={field.label}
-                                    value={profile[field.name]}
-                                    placeholder={profile[field.name]}
-                                    defaultValue={profile[field.name]}
-                                    onChange={(e: { target: { value: any; }; }) => updateProfileField(field.name, e.target.value)}
-                                />
-                            ))
+                          <>{navItems[modalContent].content}</>
                         )}
                     </div>
                 }
@@ -124,3 +124,10 @@ const SideNav = ({ profile, setProfile }) => {
 };
 
 export default SideNav;
+
+
+function contentArr(content : any) : [{ key: any; label: any; name: string | number;}] {
+    return content.map((field: { key: any; label: any; }) => (
+        { key: field.key, label: field.label, name: field.key }
+    ));
+}

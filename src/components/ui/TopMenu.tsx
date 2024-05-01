@@ -14,39 +14,48 @@ import Link from "next/link";
 export const TopMenu = () => {
   const theme = useTheme();
   return (
-      <Stack direction="row" spacing={2} sx={{ marginTop: "5px" }}>
+    <Stack direction="row" spacing={2} sx={{ marginTop: "5px", justifyContent: "space-between" }}>
+      
+      {/* Logo and name of the app */}
+      <Link href="/home">
+        <Stack direction="row" spacing={2} sx={{ display: "flex", alignItems: "center" }}>
           <Image src="/imgs/logo-nw.png" alt="Logo" width={125} height={125} />
           <Typography
-            variant="h4"
-            component="div"
-            sx={{ flexGrow: 1, color: "#D97227", fontWeight: "bold", display: "flex", alignItems: "center"}}
+          variant="h4"
+          component="div"
+          sx={{ flexGrow: 1, color: "#D97227", fontWeight: "bold", display: "flex", alignItems: "center"}}
           >
-            ExploreHub
+          ExploreHub
           </Typography>
+        </Stack>
+      </Link>
 
-          <Box sx={{ 
-            display: "flex", 
-            gap: "20px", 
-            height: "80px", 
-            backgroundColor: theme.palette.secondary.main, 
-            borderRadius: "0 0 0 60px",
-            padding: "30px",
-            }}>
-            <IconButton>
-              <Link href="/home/checkout">
-                <ShoppingCartIcon sx={{ color: "#D97227", fontSize: "40px" }} />
-              </Link>
-            </IconButton>
+      {/* Shopping cart and user profile */}
+      <Box sx={{ 
+      display: "flex", 
+      gap: "20px", 
+      height: "80px", 
+      backgroundColor: theme.palette.secondary.main, 
+      borderRadius: "0 0 0 60px",
+      padding: "30px",
+      }}>
+        {/* Shopping cart */}
+        <IconButton>
+          <Link href="/home/checkout">
+          <ShoppingCartIcon sx={{ color: "#D97227", fontSize: "40px" }} />
+          </Link>
+        </IconButton>
 
-            <IconButton>
-            <Link href={'/home/profile'} key={'/home/profile' }>
-              <AccountCircleIcon color="primary" sx={{ fontSize: "40px" }} />
-              <Typography color="primary" component="p" sx={{ flexGrow: 1, fontWeight: "bold", marginLeft: "10px", fontSize:"20px"}}>
-                My Account
-              </Typography>
-              </Link>
-            </IconButton>
-          </Box>
-      </Stack>
+        {/* User profile */}
+        <IconButton>
+          <Link href={'/home/profile'} key={'/home/profile' }>
+            <AccountCircleIcon color="primary" sx={{ fontSize: "40px" }} />
+            <Typography color="primary" component="p" sx={{ flexGrow: 1, fontWeight: "bold", marginLeft: "10px", fontSize:"20px"}}>
+              My Account
+            </Typography>
+          </Link>
+        </IconButton>
+      </Box>
+    </Stack>
   );
 };

@@ -36,7 +36,7 @@ interface Filters {
     read: boolean; // New property to indicate if the notification has been read
     profileImage: string; // URL to the profile image
   }
-
+  
   const initialProfile = {
     name: "John Doe",
     age: 30,
@@ -110,25 +110,21 @@ interface Filters {
   
   const ProfilePage = () => {
     const [profile, setProfile] = useState(() => {
-        // Recupera el perfil del almacenamiento local, si existe, o usa el estado inicial
-        const storedProfile = localStorage.getItem('profile');
-        return storedProfile ? JSON.parse(storedProfile) : initialProfile;
+        return initialProfile;
       });
       const [isModalOpen, setModalOpen] = useState(false);
   
-      const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>, field: keyof Profile) => {
-          setProfile({ ...profile, [field]: event.target.value });
-      };
       const handleDeleteNotification = (id: number) => {
-        setProfile((prevProfile: { notifications: any[]; }) => ({
-            ...prevProfile,
-            notifications: prevProfile.notifications.filter((notification: { id: number; }) => notification.id !== id)
-        }));
-    };
-    const handleRespond = (id: number) => {
-        setProfile((prevProfile: { notifications: any[]; }) => ({
+        setProfile((prevProfile: Profile) => ({
           ...prevProfile,
-          notifications: prevProfile.notifications.map((notification: { id: number; }) =>
+          notifications: prevProfile.notifications.filter((notification) => notification.id !== id)
+        }));
+      };
+
+      const handleRespond = (id: number) => {
+        setProfile((prevProfile: Profile) => ({
+          ...prevProfile,
+          notifications: prevProfile.notifications.map((notification) =>
             notification.id === id ? { ...notification, read: true } : notification
           )
         }));
@@ -184,19 +180,19 @@ interface Filters {
     </Paper>
   </div>
             <Paper elevation={3} style={{ padding: '20px', width: '15%' }}>
-              <Typography variant="h5" style={{ marginBottom: '20px' }}>Filter Options</Typography>
-              {Object.entries(profile.filters).map(([key, value]) => (
-                <div key={key} style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
-                  <Checkbox
-                    checked={value as boolean}
-                    onChange={() => toggleFilter(key as keyof Filters)}
-                    color="primary"
-                  />
-                  <Typography variant="subtitle1" style={{ textTransform: 'capitalize' }}>{key}</Typography>
-                </div>
-              ))}
-               <Button variant="contained" color="primary" style={{ marginRight: '10px' }}>Seleccionar</Button>
-              <Button variant="outlined" color="secondary" onClick={handleClearFilters}>Eliminar</Button>
+                <Typography variant="h5" style={{ marginBottom: '20px' }}>Filter Options</Typography>
+                {Object.entries(profile.filters).map(([key, value]) => (
+                    <div key={key} style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+                        <Checkbox
+                            checked={value}
+                            onChange={() => toggleFilter(key as keyof Filters)}
+                            color="primary"
+                        />
+                        <Typography variant="subtitle1" style={{ textTransform: 'capitalize' }}>{key}</Typography>
+                    </div>
+                ))}
+                 <Button variant="contained" color="primary" style={{ marginRight: '10px' }}>Seleccionar</Button>
+                <Button variant="outlined" color="secondary" onClick={handleClearFilters}>Eliminar</Button>
             </Paper>
         </div>
     );
