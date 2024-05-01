@@ -36,6 +36,7 @@ interface Filters {
     read: boolean; // New property to indicate if the notification has been read
     profileImage: string; // URL to the profile image
   }
+
   const initialProfile = {
     name: "John Doe",
     age: 30,
@@ -165,7 +166,7 @@ interface Filters {
             <div style={{ display: 'flex', justifyContent: 'center', padding: 20 }}>
     <Paper elevation={3} style={{ padding: '20px', marginRight: '20px', minWidth:"500px",width: '120%' }}>
       <Typography variant="h5" style={{ marginBottom: '20px' }}>Preferences</Typography>
-      {profile.notifications.map((item) => (
+      {profile.notifications.map((item: Notification) => (
         <Paper key={item.id} elevation={2} style={{ padding: '10px', marginBottom: '10px', display: 'flex' }}>
           <Avatar src={item.profileImage} alt="Profile" style={{ marginRight: '10px' }} />
           <div style={{ flexGrow: 1 }}>
@@ -183,19 +184,19 @@ interface Filters {
     </Paper>
   </div>
             <Paper elevation={3} style={{ padding: '20px', width: '15%' }}>
-                <Typography variant="h5" style={{ marginBottom: '20px' }}>Filter Options</Typography>
-                {Object.entries(profile.filters).map(([key, value]) => (
-                    <div key={key} style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
-                        <Checkbox
-                            checked={value}
-                            onChange={() => toggleFilter(key as keyof Filters)}
-                            color="primary"
-                        />
-                        <Typography variant="subtitle1" style={{ textTransform: 'capitalize' }}>{key}</Typography>
-                    </div>
-                ))}
-                 <Button variant="contained" color="primary" style={{ marginRight: '10px' }}>Seleccionar</Button>
-                <Button variant="outlined" color="secondary" onClick={handleClearFilters}>Eliminar</Button>
+              <Typography variant="h5" style={{ marginBottom: '20px' }}>Filter Options</Typography>
+              {Object.entries(profile.filters).map(([key, value]) => (
+                <div key={key} style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+                  <Checkbox
+                    checked={value as boolean}
+                    onChange={() => toggleFilter(key as keyof Filters)}
+                    color="primary"
+                  />
+                  <Typography variant="subtitle1" style={{ textTransform: 'capitalize' }}>{key}</Typography>
+                </div>
+              ))}
+               <Button variant="contained" color="primary" style={{ marginRight: '10px' }}>Seleccionar</Button>
+              <Button variant="outlined" color="secondary" onClick={handleClearFilters}>Eliminar</Button>
             </Paper>
         </div>
     );
