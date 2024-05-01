@@ -1,0 +1,16 @@
+.input-icon {
+    position: relative;
+    width: 100%;
+}
+
+.input-icon > svg {
+    position: absolute;
+    top: 50%;
+    left: 0.5rem;
+    transform: translateY(-50%);
+}
+
+.input-icon > input {
+    padding-left: 2.5rem; /* Ajusta según el tamaño de tu ícono */
+    width: 90%;
+}
